@@ -1,0 +1,113 @@
+/* grid */
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 0 auto;
+	background-color:#EDE5BB;
+}
+
+body{
+    margin: 0;
+}
+
+/* nav */
+
+header{
+	background-color:#00657C;
+	display: grid;
+    grid-column: 1/9;
+    position: absolute;
+    grid-template-columns: subgrid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+header > ul{
+    grid-column: 5/8;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding-right: 40px;
+}
+
+ul{
+	font-family:"CircularStdMedium";
+    src: url(fonts/circularstd.TTF);
+	font-size:20px;
+}
+
+/* body */
+
+.Welcome{
+	position: absolute;
+	top:800px;
+	text-align: left;
+	padding-right: 600px;
+	padding-left: 50px;
+		font-family:"Caveat";
+    src: url(../fonts/caveat.regular.TTF);
+}
+
+.Backsplash{
+        position: absolute;
+        top: 500px;
+        left: 30px;
+        border: 1px solid #000000;
+}
+	  
+.Eiffel{
+        position: absolute;
+        top: 150px;
+        left: 130px;
+        border: 1px solid #000000;
+}
+
+.Hello{
+        position: absolute;
+        top: 50px;
+        left: 630px;
+        border: 1px solid #000000;
+}
+
+#buttons{
+	display: flex;
+    grid-column: 3/10;
+    flex-wrap: wrap;
+	align-items: flex-end;
+	position: absolute;
+	bottom: 800px;
+	left: 200px;
+}
+	
+#buttons img{
+    height: auto;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* footer */
+footer{
+	background-color:#00657C;
+	display: grid;
+    grid-column: 5/9;
+    position: fixed;
+    grid-template-columns: subgrid;
+    grid-template-columns: repeat(8, 1fr);
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #EDE5BB;
+}
+
+footer > apps{
+    grid-column: 5/8;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding-right: 40px;
+}
