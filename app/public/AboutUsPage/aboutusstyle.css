@@ -36,11 +36,17 @@ header > ul{
 	justify-content: space-evenly;
 }
 
+header a{
+	color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
 /* body settings */
 .contentlocation{
 	display: flex;
 	grid-column: 1/11;
-	background-image: url("../AboutUsPage/Image/background.png");
+	background-image: url("../Image/background.png");
 	background-size: cover;
 	height: 750px;
 	justify-content: center;
@@ -82,7 +88,7 @@ header > ul{
 /* content word settings */
 .content h1{
 	font-family: "Caveat";
-	src: url(../Font/Caveat-Regular.ttf);
+	src: url("../Caveat-Regular.ttf");
 	font-size: 25px;
 	text-align:right
 }
