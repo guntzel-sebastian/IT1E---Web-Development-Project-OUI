@@ -71,29 +71,25 @@ header a:active{
 	height: 650px;
 	color: #95261F;
 	background-color: #BAD3EE;
-	box-shadow: 1px 1px 1px 1px #5f5f5f;    
-}
-
-/* content setting: display in columns */
-.contenttogether{
-	column-count:2;
+	box-shadow: 1px 1px 1px 1px #5f5f5f;
+		column-count:2;
 	-moz-column-count:2; /* Firefox */
 	-webkit-column-count:2; /* Safari and Chrome */
-	column-gap: 50px;
+	column-gap: 30px;
+	align-items: center;    
 }
+
 
 /* content settings: left part */
 .contentleft{
-	margin-top: 50px;
-	margin-right: 20px;
+  align-items: center;
+  margin: 50px;
 }
 
 /* content settings: right part */
 .contentright{
-	margin-top: 50px;
-	/*margin-left: 15px;*/
-	margin-right: 15px;
-	/*padding-right: 10px;*/
+ align-items: center;
+ margin: 50px;
 }
 
 /* content word settings */
@@ -101,16 +97,16 @@ header a:active{
 	font-family: "Caveat";
 	src: url("../Caveat-Regular.ttf");
 	font-size: 25px;
-	text-align:right
+	text-align:right;
 }
 .content h2{
 	font-family: Circular Std;
 	font-size: 20px;
-	text-align:right
+	text-align:right;
 }
 .content p{
 	font-family: Circular Std;
-	font-size: 25px;
+	font-size: 20px;
 	text-align:left;
 }
 
@@ -121,14 +117,14 @@ header a:active{
 }
 #coffee{
 	position: relative;
-	bottom: 525px;
-	left: 50px;
+	bottom: 475px;
+  right: 350px;
 	transform:rotate(25deg);
 }
 #merengue{
 	position: relative;
 	bottom: 10px;
-	left: 500px;
+  left: 100px;
 	transform:rotate(-25deg)
 }
 
