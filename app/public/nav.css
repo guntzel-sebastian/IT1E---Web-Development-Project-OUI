@@ -83,10 +83,10 @@ body{
     display: none;
 }
 
-/* .nav-li{
+.nav-li{
     display: none;
     
-} */
+}
 
 .active{
      background-color: #004959;
@@ -110,7 +110,7 @@ body{
 }
 
 .nav-li{
-    /* display: block; */
+    display: block;
 }
 
 .nav-list{
