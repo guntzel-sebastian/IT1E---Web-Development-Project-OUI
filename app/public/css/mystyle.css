@@ -1,29 +1,51 @@
-/* grid */
-
-#container{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    margin: 0 auto;
-	background-color:#EDE5BB;
-}
+/*styles*/
 
 body{
     margin: 0;
+	padding: 0;
+	font-family: Caveat, 'Circular Std-Bold', 'Circular Std Medium', 'Circular Std Book';
+	background-color:#EDE5BB;
 }
 
+h1{
+	font-family: Caveat;
+	color: #00657C;
+}
+
+p{
+	color: #BAD3EE;
+}
+
+a{
+	font-family: 'Circular Std Medium';
+	color: #EDE5BB;
+}
+
+ul{
+	list-style-type: none; 
+	color: white;
+}
+
+/* grid */
+
+#mainContainer{
+    display: grid;
+    grid-template-columns: repeate(8, 1fr);
+}
 /* nav */
 
 header{
-	background-color:#00657C;
+	grid-column: 1/9;
 	display: grid;
-    grid-column: 1/9;
-    position: absolute;
-    grid-template-columns: subgrid;
+	background-color:#00657C;
+	position: sticky;
+	top: 0;
     grid-template-columns: repeat(8, 1fr);
+	z-index: 100;
 }
 
 header > ul{
-    grid-column: 5/8;
+    grid-column: 5/9;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -39,71 +61,114 @@ ul{
 
 /* body */
 
-.Welcome{
-	position: absolute;
-	top:800px;
-	text-align: left;
-	padding-right: 600px;
-	padding-left: 50px;
-		font-family:"Caveat";
-    src: url(../fonts/caveat.regular.TTF);
-}
-
-.Backsplash{
-        position: absolute;
-        top: 500px;
-        left: 30px;
-        border: 1px solid #000000;
+#backsplash{
+		grid-column: 1 / 9;
+		display: grid;
+		grid-template-columns: repeate(8, 1fr);
+		background-image: url("../img/coffee.png");
+		background-size: cover;
+		height: 1030px;
+		width: 1920px;
 }
 	  
-.Eiffel{
-        position: absolute;
-        top: 150px;
-        left: 130px;
-        border: 1px solid #000000;
-}
-
-.Hello{
-        position: absolute;
-        top: 50px;
-        left: 630px;
-        border: 1px solid #000000;
-}
-
-#buttons{
+#eiffel{
+	top: 100px;
 	display: flex;
-    grid-column: 3/10;
-    flex-wrap: wrap;
+	content: url("../img/eiffel65blue.png");
+	position: relative;
+	width: 100px;
+	z-index: 50;
+}
+
+.welcome{
+	padding: 100px;
+	grid-column: 1/8;
+	display: flex;
+	text-align: left;
+	font-family:"Caveat";
+    src: url(../fonts/caveat.regular.ttf);
+}
+
+.bodyText{
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-basis: 1000px;
+	color: black;
+}
+
+.buttons{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
 	align-items: flex-end;
-	position: absolute;
-	bottom: 800px;
-	left: 200px;
+	flex-basis: 700px;
 }
 	
-#buttons img{
-    height: auto;
-    width: 45%;
-    margin-left: auto;
-    margin-right: auto;
+.coffee{
+	content: url("../img/illustrations_light blue_coffee.png");
+	background-color: #00657C;
+	height: 330px;
+	width: 280px;
+	align-content: center;
+	background-size: cover
 }
 
+.tea{
+	content: url("../img/illustrations_blue green_tea.png");
+	background-color: #CCC59A;
+	height: 330px;
+	width: 280px;
+	align-content: center;
+	background-size: cover
+}
+
+.croissant{
+	content: url("../img/illustrations_yellow_croissant.png");
+	background-color: #95261F;
+	height: 330px;
+	width: 280px;
+	align-content: center;
+	background-size: cover
+}
+
+.macaron{
+	content: url("../img/illustrations_red_merengue.png");
+	background-color: #BAD3EE;
+	height: 330px;
+	width: 280px;
+	align-content: center;
+	background-size: cover
+}
+
+#videoEmbed{
+	grid-column: 1/9;
+	display: flex;
+	background-color: #BAD3EE;
+	height: 450px;
+	width: 1706px;
+}
 
 /* footer */
 footer{
 	background-color:#00657C;
 	display: grid;
     grid-column: 1/9;
-    position: fixed;
     grid-template-columns: subgrid;
     grid-template-columns: repeat(8, 1fr);
 	left: 0;
 	bottom: 0;
 	width: 100%;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	color: #EDE5BB;
 }
 
-footer > apps{
+.footerApps{
     grid-column: 5/8;
     list-style-type: none;
     display: flex;
