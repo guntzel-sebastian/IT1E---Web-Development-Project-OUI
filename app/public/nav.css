@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    gap: 20px;
+    background-color: #EDE5BB;
+    
+}
+
+
+.bpholder{
+    margin-left: 25px;
+}
+
+
+/* Nav bar */
+.navbar {
+    height: 81px;
+    width: 100%;
+    background-color: #00657C;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    /* background-color:#EDE5BB; */
+     
+}
+
+.Lholder{
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0; 
+}
+
+.logo{
+    width: 142px;
+    height: 81px;
+}
+
+
+.nav-lis{
+    display: flex;
+
+    
+}
+
+.nav-lis ul{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-lis li{
+    width: 200px;
+     padding:31px
+}
+
+.nav-lis li a{
+    display: block;
+    color:#EDE5BB;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+.nav-lis li:hover{
+    background-color: #03A1C5;
+}
+
+#check{
+    display: none;
+}
+
+
+.nav-list{
+    display: none;
+}
+
+/* .nav-li{
+    display: none;
+    
+} */
+
+.active{
+     background-color: #004959;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+.nav-lis{
+    display: none;
+}
+#check{
+    display: block;
+    width: 70px;
+    height: 40px;
+    align-self: center;
+    color: #EDE5BB;
+    background-color: #00657C;
+    border: 0;
+    font-size: 35px;
+}
+
+.nav-li{
+    /* display: block; */
+}
+
+.nav-list{
+    width: 55% ;
+    position: relative;
+    height: 70px;
+    /* background-color:#EDE5BB; */
+    background-color: yellow;
+    justify-content: flex-end;
+    float: right;
+    flex-shrink: 1;
+    /* display: none; */
+    /* display: block; */
+    
+}
+
+.nav-li li{
+    height: 70px;
+    line-height: 70px;
+    align-items: center;
+    text-align: center;
+    /* color: #EDE5BB; */
+    background-color: #00657C;
+    transition: all .5s;
+    
+}
+
+.nav-li li a {
+    color: #EDE5BB;
+    font-size: 31px;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* flex-grow: 1; */
+   
+}
+
+.nav-li li:hover{
+    background: #03A1C5;
+    transition: 0.5s;
+} 
+
+li.active{
+    background-color:#004959;
+}
+
+
+}
