@@ -34,12 +34,23 @@ header > ul{
 	align-items: center;
 	list-style-type: none;
 	justify-content: space-evenly;
+	background-color: #00657C;
+  	transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 header a{
-	color: white;
+  color: white;
   text-align: center;
   text-decoration: none;
+}
+
+header a:hover{
+	background-color: #004959;
+}
+
+header a:active{
+	background-color: #007F9C;
 }
 
 /* body settings */
@@ -158,3 +169,4 @@ footer{
 	width: 50px;
 	height: auto;
 }
+
