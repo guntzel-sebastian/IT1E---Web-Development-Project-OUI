@@ -14,3 +14,8 @@ dropdown.addEventListener('click', function(){
     }
 
 });
+
+function closeNav(){
+   document.getElementById('nav-mobile').style.display='none';
+}
+document.querySelector('#main').addEventListener('click',closeNav)
