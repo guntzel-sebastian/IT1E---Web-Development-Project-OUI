@@ -6,6 +6,7 @@
 body{
 	margin: 0;
 }
+
 /* main settings for header */
 header{
 	display: grid;
@@ -13,7 +14,7 @@ header{
 	position: relative;
 	grid-template-columns: subgrid;
 	grid-template-columns: repeat(10, 1fr);
-	background-color: #00657C;
+	background-color: #00657C;	
 }
 
 /* logo settings */
@@ -24,7 +25,7 @@ header{
 }
 .titlelocation img{
 	width: 150px;
-	height: auto;
+  height: auto;
 }
 
 /* nav settings */
@@ -46,7 +47,6 @@ header a{
   padding: 30px;
 }
 
-
 header a:hover{
 	background-color: #004959;
 }
@@ -55,15 +55,11 @@ header a:active{
 	background-color: #007F9C;
 }
 
-header > select{
-	display: none;
-}
-
 /* body settings */
 .contentlocation{
 	display: flex;
 	grid-column: 1/11;
-	background-image: url("../Image/background.png");
+	background-image: url("Image/background.png");
 	background-size: cover;
 	height: 750px;
 	justify-content: center;
@@ -71,67 +67,90 @@ header > select{
 
 /* content settings */
 .content{
+	grid-column: 5/7;
 	position: relative;
-	top: 50px;
 	width: 750px;
-	height: 650px;
-	color: #95261F;
-	background-color: #BAD3EE;
-	box-shadow: 1px 1px 1px 1px #5f5f5f;
-		column-count:2;
-	-moz-column-count:2; /* Firefox */
-	-webkit-column-count:2; /* Safari and Chrome */
-	column-gap: 30px;
-	align-items: center;    
+  height: 625px;
+  color: #95261F;
+  background-color: #BAD3EE;
+  box-shadow: 1px 1px 1px 1px #5f5f5f;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
 }
 
+/* content setting: center align */
 
-/* content settings: left part */
-.contentleft{
-  align-items: center;
-  margin: 50px;
+
+/* content settings: icon+social media name */
+.singleicon{
+  justify-content: center;
+	display: flex;
+	align-items: center;
+	text-align:center;
+}
+.singleicon img{
+	width: 40px;
 }
 
-/* content settings: right part */
-.contentright{
- align-items: center;
- margin: 50px;
+/* content settings: email table */
+input[type=text]{
+  width: 200px;
+  height: auto;
+  display: inline-block;
+  border: none;
+  background: #EDE5BB;
+  vertical-align: top;
+}
+
+/*.signup{
+	display: table;
+	height: 25px;
+	vertical-align: top;
+	display: inline-block;
+}*/
+
+/* content settings: sign up button */
+.signup {
+  border: none;
+  background-color: white;
+  color: #95261F;
+  cursor: pointer;
+  font-size: 15px;
+  width: 75px;
+  height: auto;
+  vertical-align: top;
+  display: inline-block;
+}
+.signup:hover {
+  background-color: grey;
 }
 
 /* content word settings */
 .content h1{
 	font-family: "Caveat";
-	src: url("../Caveat-Regular.ttf");
+	src: url("Font/Caveat-Regular.ttf");
 	font-size: 25px;
-	text-align:right;
 }
 .content h2{
 	font-family: Circular Std;
 	font-size: 20px;
-	text-align:right;
-}
-.content p{
-	font-family: Circular Std;
-	font-size: 20px;
-	text-align:left;
 }
 
 /* icon of body part settings */
-.content img{
+#croissant{
 	width: 100px;
-	height: auto;
-}
-#coffee{
 	position: relative;
-	bottom: 475px;
-  right: 350px;
-	transform:rotate(25deg);
-}
-#merengue{
-	position: relative;
-	bottom: 10px;
-  left: 100px;
+	bottom: 50px;
+  left: 300px;
 	transform:rotate(-25deg)
+}
+#tea{
+	width: 100px;
+	position: relative;
+	bottom: 510px;
+  left: -320px;
+	transform:rotate(25deg);
 }
 
 /* main settings for footer */
@@ -172,34 +191,28 @@ footer{
 	height: auto;
 }
 
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 700px){
 	body{
-		width: auto;
-		height: auto;
+		/* width: auto;
+		height: auto; */
 	}
 
 	header > ul{
-		display: none;
+		grid-column: 5/9;
 	}
 
-	header > select{
-  	display: inline-block;
-  	grid-column: 9/10;
-  	background-color: #00657C;
-  	border-style: none;
-  	color: white;
-  }
     .contentlocation{
     	display: flex;
     	width: unset;
 		  height: unset;
     	grid-column: 1/11;
-    	background-image: url("../Image/background_mobile.png");
+    	background-image: url("Image/background.png");
     }
-    #coffee{
+    #tea{
     	visibility:hidden;
     }
-    #merengue{
+    #croissant{
     	visibility:hidden;
     }
    .content{
@@ -212,18 +225,12 @@ footer{
 		box-shadow: 1px 1px 1px 1px #5f5f5f;   
 		align-items: center; 
 		justify-items: center;
-		column-count:1;
-	  -moz-column-count:1; /* Firefox */
-	  -webkit-column-count:1; /* Safari and Chrome */
 	  margin: 20px;
     top: 2px;
 	}
-  .contenttogether{
-	  
-	}
 	.content h1{
 		font-family: "Caveat";
-		src: url("../Caveat-Regular.ttf");
+		src: url("Caveat-Regular.ttf");
 		font-size: 25px;
 		text-align:center;
 	}
@@ -243,5 +250,14 @@ footer{
 	.socialicon{
 		grid-column: 6/10;
 	}
-}
+	.signuptogether h1{
+		font-size: 20px;
 
+	}
+	input[type=text]{
+		width: 150px;
+	}
+	.signup{
+		width: 55px;
+	}
+}
