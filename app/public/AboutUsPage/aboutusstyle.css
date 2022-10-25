@@ -23,27 +23,29 @@ header{
 	align-items: center;
 }
 .titlelocation img{
-	width: 100px;
+	width: 150px;
 	height: auto;
 }
 
 /* nav settings */
 header > ul{
-	grid-column: 7/10;
+	grid-column: 7/11;
 	display: flex;
 	align-items: center;
 	list-style-type: none;
 	justify-content: space-evenly;
 	background-color: #00657C;
-  	transition-duration: 0.4s;
-    cursor: pointer;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 header a{
   color: white;
   text-align: center;
   text-decoration: none;
+  padding: 30px;
 }
+
 
 header a:hover{
 	background-color: #004959;
@@ -51,6 +53,10 @@ header a:hover{
 
 header a:active{
 	background-color: #007F9C;
+}
+
+header > select{
+	display: none;
 }
 
 /* body settings */
@@ -136,7 +142,7 @@ footer{
 	grid-template-columns: subgrid;
 	grid-template-columns: repeat(10, 1fr);
 	background-color: #00657C;
-	height: 75px;
+	height: auto;
 }
 
 /* location settings */
@@ -164,5 +170,78 @@ footer{
 .socialicon img{
 	width: 50px;
 	height: auto;
+}
+
+@media screen and (max-width: 576px){
+	body{
+		width: auto;
+		height: auto;
+	}
+
+	header > ul{
+		display: none;
+	}
+
+	header > select{
+  	display: inline-block;
+  	grid-column: 9/10;
+  	background-color: #00657C;
+  	border-style: none;
+  	color: white;
+  }
+    .contentlocation{
+    	display: flex;
+    	width: unset;
+		  height: unset;
+    	grid-column: 1/11;
+    	background-image: url("../Image/background_mobile.png");
+    }
+    #coffee{
+    	visibility:hidden;
+    }
+    #merengue{
+    	visibility:hidden;
+    }
+   .content{
+		position: relative;
+		top: 50px;
+		width: unset;
+		height: unset;
+		color: #95261F;
+		background-color: #BAD3EE;
+		box-shadow: 1px 1px 1px 1px #5f5f5f;   
+		align-items: center; 
+		justify-items: center;
+		column-count:1;
+	  -moz-column-count:1; /* Firefox */
+	  -webkit-column-count:1; /* Safari and Chrome */
+	  margin: 20px;
+    top: 2px;
+	}
+  .contenttogether{
+	  
+	}
+	.content h1{
+		font-family: "Caveat";
+		src: url("../Caveat-Regular.ttf");
+		font-size: 25px;
+		text-align:center;
+	}
+	.content h2{
+		font-family: Circular Std;
+		font-size: 20px;
+		text-align:center;
+	}
+	.content p{
+		font-family: Circular Std;
+		font-size: 20px;
+		text-align:center;
+	}
+	.location p{
+		visibility:hidden;
+	}
+	.socialicon{
+		grid-column: 6/10;
+	}
 }
 
