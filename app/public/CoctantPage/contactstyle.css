@@ -55,6 +55,11 @@ header a:active{
 	background-color: #007F9C;
 }
 
+/*hide drop down list*/
+.dropdown{
+	display: none;
+}
+
 /* body settings */
 .contentlocation{
 	display: flex;
@@ -192,3 +197,127 @@ footer{
 }
 
 
+@media screen and (max-width: 576px){
+	body{
+		width: auto;
+		height: auto;
+	}
+
+	header > ul{
+		display: none;
+	}
+
+	/*setting drop down button container*/
+	.dropdown {
+		grid-column: 7/10;
+    position: relative;
+    display: inline-block;
+	}
+
+	/*setting drop down button style*/
+	.dropbtn {
+	  background-color: #00657C;
+	  color: white;
+	  font-size: 25px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	.dropbtn img{
+		width: 50px;
+		padding-left: 40px;
+	  padding-top: 15px;
+	  padding-right: 40px;
+	}	
+
+	/*drop down content hidden by default*/
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #00657C;
+	  min-width: 100px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  align-items: center;
+	  z-index: 1;
+	}
+
+	/*drop down list*/
+	.dropdown-content a {
+	  color: white;
+	  padding: 14px;
+	  margin: 15px;
+	  font-size: 25px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	/*show drop down list and change button background color when drop down*/
+	.dropdown:hover .dropdown-content {
+		display: block;
+		background-color: #004959;
+	}
+
+	/*change background color when tap drop down list*/
+	.dropdown-content a:hover {
+		background-color: #007F9C;
+	}
+
+  .contentlocation{
+    display: flex;
+    width: unset;
+		height: unset;
+    grid-column: 1/11;
+    background-image: url("../Image/background_mobile.png");
+  }
+  #tea{
+    visibility:hidden;
+  }
+  #croissant{
+    visibility:hidden;
+  }
+  .content{
+		position: relative;
+		top: 50px;
+		width: unset;
+		height: unset;
+		color: #95261F;
+		background-color: #BAD3EE;
+		box-shadow: 1px 1px 1px 1px #5f5f5f;   
+		align-items: center; 
+		justify-items: center;
+	  margin: 20px;
+    top: 2px;
+	}
+	.content h1{
+		font-family: "Caveat";
+		src: url("../Caveat-Regular.ttf");
+		font-size: 25px;
+		text-align:center;
+	}
+	.content h2{
+		font-family: Circular Std;
+		font-size: 20px;
+		text-align:center;
+	}
+	.content p{
+		font-family: Circular Std;
+		font-size: 20px;
+		text-align:center;
+	}
+	.location p{
+		visibility:hidden;
+	}
+	.socialicon{
+		grid-column: 6/10;
+	}
+	.signuptogether h1{
+		font-size: 20px;
+
+	}
+	input[type=text]{
+		width: 150px;
+	}
+	.signup{
+		width: 55px;
+	}
+}
