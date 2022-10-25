@@ -46,7 +46,6 @@ header a{
   padding: 30px;
 }
 
-
 header a:hover{
 	background-color: #004959;
 }
@@ -55,7 +54,8 @@ header a:active{
 	background-color: #007F9C;
 }
 
-header > select{
+/*hide drop down list*/
+.dropdown{
 	display: none;
 }
 
@@ -172,6 +172,7 @@ footer{
 	height: auto;
 }
 
+/*mobile version*/
 @media screen and (max-width: 576px){
 	body{
 		width: auto;
@@ -182,27 +183,80 @@ footer{
 		display: none;
 	}
 
-	header > select{
-  	display: inline-block;
-  	grid-column: 9/10;
-  	background-color: #00657C;
-  	border-style: none;
-  	color: white;
+	/*setting drop down button container*/
+	.dropdown {
+		grid-column: 7/9;
+    position: relative;
+    display: inline-block;
+	}
+
+	/*setting drop down button style*/
+	.dropbtn {
+	  background-color: #00657C;
+	  color: white;
+	  font-size: 25px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	.dropbtn img{
+		width: 50px;
+		padding-left: 40px;
+	  padding-top: 15px;
+	  padding-right: 40px;
+	}	
+
+	/*drop down content hidden by default*/
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #00657C;
+	  min-width: 100px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  align-items: center;
+	  z-index: 1;
+	}
+
+	/*drop down list*/
+	.dropdown-content a {
+	  color: white;
+	  padding: 14px;
+	  margin: 15px;
+	  font-size: 25px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	/*show drop down list and change button background color when drop down*/
+	.dropdown:hover .dropdown-content {
+		display: block;
+		background-color: #004959;
+	}
+
+	/*change background color when tap drop down list*/
+	.dropdown-content a:hover {
+		background-color: #007F9C;
+	}
+
+	/*body mobile version  setting*/
+  .contentlocation{
+    display: flex;
+    width: unset;
+		height: unset;
+    grid-column: 1/11;
+    background-image: url("../Image/background_mobile.png");
   }
-    .contentlocation{
-    	display: flex;
-    	width: unset;
-		  height: unset;
-    	grid-column: 1/11;
-    	background-image: url("../Image/background_mobile.png");
-    }
-    #coffee{
-    	visibility:hidden;
-    }
-    #merengue{
-    	visibility:hidden;
-    }
-   .content{
+
+  /*hide icon*/
+  #coffee{
+    visibility:hidden;
+  }
+  #merengue{
+    visibility:hidden;
+  }
+
+  /*content mobile version setting*/
+  .content{
 		position: relative;
 		top: 50px;
 		width: unset;
@@ -213,13 +267,10 @@ footer{
 		align-items: center; 
 		justify-items: center;
 		column-count:1;
-	  -moz-column-count:1; /* Firefox */
-	  -webkit-column-count:1; /* Safari and Chrome */
-	  margin: 20px;
-    top: 2px;
-	}
-  .contenttogether{
-	  
+		-moz-column-count:1; /* Firefox */
+		-webkit-column-count:1; /* Safari and Chrome */
+		margin: 20px;
+	  top: 2px;
 	}
 	.content h1{
 		font-family: "Caveat";
@@ -237,6 +288,8 @@ footer{
 		font-size: 20px;
 		text-align:center;
 	}
+
+	/*footer setting*/
 	.location p{
 		visibility:hidden;
 	}
