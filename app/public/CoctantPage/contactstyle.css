@@ -24,26 +24,27 @@ header{
 	align-items: center;
 }
 .titlelocation img{
-	width: 100px;
-	height: auto;
+	width: 150px;
+  height: auto;
 }
 
 /* nav settings */
 header > ul{
-	grid-column: 7/10;
+	grid-column: 7/11;
 	display: flex;
 	align-items: center;
 	list-style-type: none;
 	justify-content: space-evenly;
 	background-color: #00657C;
-  	transition-duration: 0.4s;
-    cursor: pointer;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 header a{
   color: white;
   text-align: center;
   text-decoration: none;
+  padding: 30px;
 }
 
 header a:hover{
@@ -160,7 +161,7 @@ footer{
 	grid-template-columns: subgrid;
 	grid-template-columns: repeat(10, 1fr);
 	background-color: #00657C;
-	height: 75px;
+	height: auto;
 }
 
 /* location settings */
@@ -189,4 +190,5 @@ footer{
 	width: 50px;
 	height: auto;
 }
+
 
