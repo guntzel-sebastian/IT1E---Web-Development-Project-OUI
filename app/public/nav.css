@@ -58,11 +58,11 @@ body{
 
 .nav-desktop li{
     width: 200px;
-     padding:31px
 }
 
 .nav-desktop li a{
     display: block;
+    padding:31px;
     color:#EDE5BB;
     text-align: center;
     text-transform: uppercase;
