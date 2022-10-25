@@ -44,24 +44,24 @@ body{
 }
 
 
-.nav-lis{
+.nav-desktop{
     display: flex;
 
     
 }
 
-.nav-lis ul{
+.nav-desktop ul{
     display: flex;
     align-items: center;
 
 }
 
-.nav-lis li{
+.nav-desktop li{
     width: 200px;
      padding:31px
 }
 
-.nav-lis li a{
+.nav-desktop li a{
     display: block;
     color:#EDE5BB;
     text-align: center;
@@ -70,20 +70,20 @@ body{
    
 }
 
-.nav-lis li:hover{
+.nav-desktop li:hover{
     background-color: #03A1C5;
 }
 
-#check{
+#hamburger-btn{
     display: none;
 }
 
 
-.nav-list{
+.nav-mobile{
     display: none;
 }
 
-.nav-li{
+.nav-list-mobile{
     display: none;
     
 }
@@ -95,10 +95,10 @@ body{
 
 @media screen and (max-width: 900px) {
     
-.nav-lis{
+.nav-desktop{
     display: none;
 }
-#check{
+#hamburger-btn{
     display: block;
     width: 70px;
     height: 40px;
@@ -109,25 +109,20 @@ body{
     font-size: 35px;
 }
 
-.nav-li{
+.nav-list-mobile{
     display: block;
 }
 
-.nav-list{
+.nav-mobile{
     width: 55% ;
     position: relative;
-    height: 70px;
-    /* background-color:#EDE5BB; */
-    background-color: yellow;
+    height: 0px;
     justify-content: flex-end;
     float: right;
     flex-shrink: 1;
-    /* display: none; */
-    /* display: block; */
-    
 }
 
-.nav-li li{
+.nav-list-mobile li{
     height: 70px;
     line-height: 70px;
     align-items: center;
@@ -138,7 +133,7 @@ body{
     
 }
 
-.nav-li li a {
+.nav-list-mobile li a {
     color: #EDE5BB;
     font-size: 31px;
     text-transform: uppercase;
@@ -147,7 +142,7 @@ body{
    
 }
 
-.nav-li li:hover{
+.nav-list-mobile li:hover{
     background: #03A1C5;
     transition: 0.5s;
 } 

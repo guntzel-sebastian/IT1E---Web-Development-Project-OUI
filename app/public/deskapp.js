@@ -1,7 +1,7 @@
-let dropdown = document.getElementById('check');
+let dropdown = document.getElementById('hamburger-btn');
 
 
-let dropdownbox = document.getElementById('nav-list');
+let dropdownbox = document.getElementById('nav-mobile');
 console.log(dropdownbox);
 
 dropdown.addEventListener('click', function(){
