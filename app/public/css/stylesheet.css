@@ -1,0 +1,187 @@
+/*styles*/
+
+body{
+    margin: 0;
+	padding: 0;
+	font-family: Caveat, 'Circular Std-Bold', 'Circular Std Medium', 'Circular Std Book';
+	background-color:#EDE5BB;
+}
+
+h1{
+	font-family: Caveat;
+	color: #00657C;
+}
+
+p{
+	color: #BAD3EE;
+}
+
+a{
+	font-family: 'Circular Std Medium';
+	color: #EDE5BB;
+}
+
+ul{
+	list-style-type: none; 
+	color: white;
+}
+
+/* grid */
+
+#mainContainer{
+    display: grid;
+    grid-template-columns: repeate(8, 1fr);
+}
+/* nav */
+
+header{
+	grid-column: 1/9;
+	display: grid;
+	background-color:#00657C;
+	position: sticky;
+	top: 0;
+    grid-template-columns: repeat(8, 1fr);
+	z-index: 100;
+}
+
+header > ul{
+    grid-column: 5/9;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding-right: 40px;
+}
+
+ul{
+	font-family:"CircularStdMedium";
+    src: url(fonts/circularstd.TTF);
+	font-size:20px;
+}
+
+/* body */
+
+#backsplash{
+		grid-column: 1 / 9;
+		display: grid;
+		grid-template-columns: repeate(8, 1fr);
+		background-image: url("../img/coffee.png");
+		background-size: cover;
+		height: 1030px;
+		width: 100%;
+}
+	  
+#eiffel{
+	top: 100px;
+	display: flex;
+	content: url("../img/eiffel65blue.png");
+	position: relative;
+	width: 100px;
+	z-index: 50;
+}
+
+.welcome{
+	margin: 50px;
+	grid-column: 1/8;
+	display: flex;
+	text-align: left;
+	font-family:"Caveat";
+    src: url(../fonts/caveat.regular.ttf);
+}
+
+.bodyText{
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-basis: 1000px;
+	color: black;
+}
+
+.buttons{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	flex-basis: 700px;
+}
+
+.buttonImgs{
+	width: 200px;
+}
+	
+.coffee{
+	display: flex;
+	flex-direction: column;
+	background-color: #00657C;
+	color: #BAD3EE;
+	height: 330px;
+	width: 280px;
+	align-items: center;
+	justify-content: center;
+	background-size: cover
+}
+
+.tea{
+	background-color: #CCC59A;
+	color: #00657C;
+	height: 330px;
+	width: 280px;
+	align-content: center;
+	background-size: cover
+}
+
+.croissant{
+
+	background-color: #95261F;
+	color: #EDE5BB;
+	height: 330px;
+	width: 280px;
+	align-content: center;
+	background-size: cover
+}
+
+.macaron{
+
+	background-color: #BAD3EE;
+	height: 330px;
+	width: 280px;
+	align-content: center;
+	background-size: cover
+}
+
+#videoEmbed{
+	margin: 50px;
+	grid-column: 1/9;
+	display: flex;
+	background-color: #BAD3EE;
+	height: 450px;
+}
+
+/* footer */
+footer{
+	background-color:#00657C;
+	display: grid;
+    grid-column: 1/9;
+    grid-template-columns: subgrid;
+    grid-template-columns: repeat(8, 1fr);
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #EDE5BB;
+	height: 100px;
+}
+
+.footerApps{
+    grid-column: 5/8;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding-right: 40px;
+}
