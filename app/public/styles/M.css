@@ -13,13 +13,12 @@ body{
     
 }
 
-
 .bpholder{
     margin-left: 25px;
 }
 
 
-/* Nav bar */
+/* Desktop Nav bar */
 .navbar {
     height: 81px;
     width: 100%;
@@ -92,7 +91,7 @@ body{
      background-color: #004959;
 }
 
-
+/* Mobile navbar */
 @media screen and (max-width: 900px) {
     
 .nav-desktop{
@@ -154,6 +153,76 @@ li.active{
 }
 
 
+/* Body */
+
+.main-bdy{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+
+.content:nth-child(1){
+    background-color: red;
+    /* grid-column: 1; */
+}
+
+
+.content:nth-child(4){
+    background-color: green;
+    grid-column: 3/5;
+    grid-row: 1;
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
+}
+
+.grid-col-span-2 p{
+    font-size: 25px;
+
+    /* align-items: center; */
+}
+
+.m-content-grid{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    gap: 20px;
+    /* min-height: 700px; */
+    grid-template-rows: 80px 400px 80px;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.m-list{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    border-spacing: 0;
+    border-collapse: 0;
+    /* background-color: green; */
+} 
+
+.m-list th{
+    text-align: left;
+    vertical-align: top;
+}
+
+.price{
+    text-align: right;
+}
+
+.li-price{
+    /* margin-top: 2px; */
+    /* float: inline-end; */
+    vertical-align: top;
+}
+
+@media screen and (max-width: 900px){
+
+}
+
 
 
 /* footer */
@@ -164,8 +233,14 @@ li.active{
     bottom: 0px;
     background-color:#00657C;
     height: 81px;
+    align-items: center;
     
   }
+
+.f-child{
+    height: 54px;
+    /* background-color: green; */
+}
 
 .location{
     display: flex;
@@ -178,9 +253,18 @@ li.active{
     height: 40px;
 }
 
+.footer:nth-child(1){
+    justify-self: flex-end;
+}
 .soc-med{
-    display: flex;
-    flex-shrink: 1;
+    /* display: flex; */
+    /* flex-shrink: 1; */
+    /* margin: ; */
+    /* position: relative;   */
+    /* justify-self: right; */
+    /* margin-left: 400px; */
+    gap: 10px;
+    /* float: right; */
     /* float: right; */
     /* justify-content: center; */
     /* position: relative; */
