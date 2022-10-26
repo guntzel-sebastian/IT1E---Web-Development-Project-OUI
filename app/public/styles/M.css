@@ -307,18 +307,7 @@ td{
     justify-self: flex-end;
 }
 .soc-med{
-    /* display: flex; */
-    /* flex-shrink: 1; */
-    /* margin: ; */
-    /* position: relative;   */
-    /* justify-self: right; */
-    /* margin-left: 400px; */
     gap: 10px;
-    /* float: right; */
-    /* float: right; */
-    /* justify-content: center; */
-    /* position: relative; */
-    /* align-items: center; */  
 }
 
 .grid-col-span-2 img{
