@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
@@ -11,24 +10,27 @@ body{
     display: grid;
     gap: 20px;
     background-color: #EDE5BB;
-    /* height: 2025px; */
+    
+}
+
+.bpholder{
+    margin-left: 25px;
 }
 
 
-/* Nav bar */
+/* Desktop Nav bar */
 .navbar {
     height: 81px;
     width: 100%;
-    background-color: #95261F;
+    background-color: #00657C;
     display: flex;
     justify-content: space-between;
-    /* justify-content: space-around; */
     gap: 2px;
     /* background-color:#EDE5BB; */
      
 }
 
-.bpholder{
+.Lholder{
     display: flex;
     align-items: center;
     width: auto;
@@ -40,237 +42,206 @@ body{
     height: 81px;
 }
 
-#check{
+
+.nav-desktop{
+    display: flex;
+
+    
+}
+
+.nav-desktop ul{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-desktop li{
+    width: 200px;
+}
+
+.nav-desktop li a{
+    display: block;
+    padding:31px;
+    color:#EDE5BB;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+.nav-desktop li:hover{
+    background-color: #03A1C5;
+}
+
+#hamburger-btn{
+    display: none;
+}
+
+
+.nav-mobile{
+    display: none;
+}
+
+.nav-list-mobile{
+    display: none;
+    
+}
+
+.active{
+     background-color: #004959;
+}
+
+/* Mobile navbar */
+@media screen and (max-width: 900px) {
+    
+.nav-desktop{
+    display: none;
+}
+#hamburger-btn{
+    display: block;
     width: 70px;
     height: 40px;
     align-self: center;
     color: #EDE5BB;
-    background-color: #95261F;
+    background-color: #00657C;
     border: 0;
     font-size: 35px;
 }
 
-.nav-list{
-    /* position: flex; */
+.nav-list-mobile{
+    display: block;
+}
+
+.nav-mobile{
     width: 55% ;
     position: relative;
     height: 0px;
-    background-color:#EDE5BB;
-    /* background-color: #95261F; */
-    /* color: #EDE5BB; */
-    /* align-self: flex-end; */
     justify-content: flex-end;
     float: right;
-    /* text-align: right; */
     flex-shrink: 1;
-    display: none;
-    
 }
 
-.nav-li li{
+.nav-list-mobile li{
+    height: 70px;
     line-height: 70px;
     align-items: center;
     text-align: center;
-    /* color: #EDE5BB; */
-    background-color: #95261F;
+    background-color: #00657C;
     transition: all .5s;
-    
+    /* box-shadow: 0 0 100% 100% black; */
+    /* color: #EDE5BB; */
 }
 
-.nav-li li a {
+.nav-list-mobile li a {
     color: #EDE5BB;
     font-size: 31px;
     text-transform: uppercase;
-    /* flex-grow: 1; */
+    text-decoration: none;
    
 }
 
-.nav-li li:hover{
-    background: #B41C12;
+.nav-list-mobile li:hover{
+    background: #03A1C5;
     transition: 0.5s;
 } 
 
 li.active{
-    background-color: #730700;
+    background-color:#004959;
 }
 
-.nav-lis{
-    display: none;
+
 }
 
-/* Body */
+
+/* Desktop Body */
+
 .main-bdy{
-/* height: 1863px; */
-width: 100%;
-display: flex;
-/* gap: 20px; */
-background-color: #EDE5BB;
-justify-content: center;
-align-items: center;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+/* Food */
+.content:nth-child(1){       
+    background-color: red;
+    /* grid-column: 1; */
+    grid-row: 2;
+    grid-column: 2/3;
+}
+
+/* Pain/Croiss */
+.content:nth-child(2){
+    /* grid-area: two; */
+     background-color: orange;
+     grid-row: 3;
+     grid-column: 2/4;
+}
+
+/* Sweet */
+.content:nth-child(3){
+    background-color: yellow;
+    grid-row: 3;
+    grid-column: 4/6;
+}
+
+/* Drinks */
+.content:nth-child(4){
+   background-color: green;
+   grid-row: 2;
+   grid-column: 6/7;
+ 
+}
+
+/* Coffee&Tea */
+.content:nth-child(5){
+     background-color: blue;
+     grid-row: 3;
+     grid-column: 6/8;
+}
+
+/* Cool Drinks */
+.content:nth-child(6){
+    background-color: indigo;
+    grid-row: 3;
+    grid-column: 8/10;
+}
+/* Coffee&Croissant imgs */
+.content:nth-child(7){
+    background-color: violet;
+    grid-row: 4;
+    grid-column: 2/4;
+}
+/* Merengue&Tea imgs */
+.content:nth-child(8){
+    background-color: brown;
+    grid-row: 4;
+    grid-column: 8/10;
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
+}
+
+.grid-col-span-2 p{
+    font-size: 25px;
+
+    /* align-items: center; */
+}
+
+td{
+    font-size: 14px;
 }
 
 .m-content-grid{
-    width: 83.64%;
-    height: 96.45%;
-    background-color: #00657C;
     display: grid;
+    grid-column-start: 2;
+    grid-column-end: 12;
     gap: 20px;
-    grid-template-rows: (6,1fr);
-    /* grid-template-areas: 
-    'one'
-    'two'
-    'three'
-    'four'
-    'five'
-    'six'
-    ; */
-    /* grid-auto-rows: minmax(min-content,max-content); */
-    /* place-items: center; */
-    /* justify-self: end; */
-    /* float: right; */
-    /* margin-inline: auto; */
-    
-}
-
-.m-content-grid> article{
-    background-color: white;
-}
-
-
-/* .m-content-grid:first-child{
-    background-color: green;
-    min-height: 123px;
-} */
-
-.pname{
-    vertical-align: top;
-}
-
-.pname li{
-    margin-left: 10px;
-    font-size: smaller;
-}
-
-@media screen and (min-width: 800px){
-
-    .bpholder{
-        margin-left: 25px;
-    }
-
-    .navbar{
-        /* height: 100px; */
-        /* flex-shrink: 1; */
-        /* width: 300px; */
-    }
-
-    .nav-lis{
-        display: flex;
-        /* justify-items: center; */
-        /* float: right; */
-        /* margin-top: 20px; */
-        
-    }
-
-    .nav-lis ul{
-        display: flex;
-        width: auto;
-        /* justify-items: center; */
-        /* position: relative; */
-        /* float: right; */
-    }
-
-    .nav-lis li{
-        width: 200px;
-    }
-
-    .nav-lis a{
-        /* justify-self: center; */
-        
-    }
-
-    #check{
-        display: none;
-    }
-
-
-    .nav-list{
-        display: none;
-        /* height: 292px; */
-        /* background-color: green; */
-        /* display: block; */
-        /* position: relative; */
-        /* top: 0; */
-        /* background: none; */
-        /* float: right; */
-        /* position:absolute; */
-    }
-
-    .nav-li{
-        display: none;
-        /* opacity: 0; */
-        
-
-    }
-
-    /* .nav-li li{
-        line-height: 20px;
-    }
-
-    .nav-li a{
-        font-size: 8px;
-
-    } */
-
-    .main-bdy{
-    /* min-height: 918px; */
-    }
-
-    .content:nth-child(1){
-        background-color: red;
-        /* grid-column: 1; */
-    }
-
-    /* .content:nth-child(2){
-        grid-area: two;
-         background-color: orange;
-    } */
-
-    /* .content:nth-child(3){
-        background-color: yellow;
-    } */
-
-    .content:nth-child(4){
-       background-color: green;
-       grid-column: 3/5;
-       grid-row: 1;
-    }
-
-    /* .content:nth-child(5){
-         background-color: blue;
-    } */
-
-    /* .content:nth-child(6){
-        background-color: indigo;
-    } */
-
-
-    .grid-col-span-2{
-        grid-column: span 2;
-    }
-    .m-content-grid{
-    display: grid;
     /* min-height: 700px; */
-    grid-template-rows: 80px 400px 80px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10px 80px 400px 80px 10px;
+    grid-template-columns: 10px repeat(8, 1fr) 10px;
+    background-color: #00657C;
+    /* margin: 0 15px; */
 
-    /* grid-template-rows: repeat(3,1fr); */
-
-    /* grid-template-areas: 
-        'one four'
-        'two three five six'
-        
-    ; */
-    }
 }
 
 .m-list{
@@ -280,12 +251,12 @@ align-items: center;
     padding: 0%;
     border-spacing: 0;
     border-collapse: 0;
-    /* bacolor: green;  */
     /* background-color: green; */
 } 
 
 .m-list th{
     text-align: left;
+    vertical-align: top;
 }
 
 .price{
@@ -298,14 +269,110 @@ align-items: center;
     vertical-align: top;
 }
 
+/* Mobile body */
+@media screen and (max-width: 900px){
+    .main-bdy{
+        display: grid;
+        grid-template-columns: 20px repeat(3,1fr) 20px;
+    }
+
+    .m-content-grid{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        gap: 20px;
+        /* min-height: 700px; */
+        grid-template-rows: 10px 50px repeat(2,1fr)  50px repeat(2,1fr) 10px;
+        grid-template-columns: 10px 1fr 10px;
+        background-color: #00657C;
+        /* margin: 0 15px; */
+    
+    }
+
+    .grid-col-span-2{
+        grid-column: 1;
+    }
+
+     /* Food */
+    .content:nth-child(1){       
+        background-color: red;
+       
+        grid-row: 2;
+        /* grid-column: 1; */
+        grid-column: 2;
+    }
+
+    /* Pain/Croiss */
+    .content:nth-child(2){
+        /* grid-area: two; */
+         background-color: orange;
+         grid-row: 3;
+         grid-column:2;
+    }
+
+    /* Sweet */
+    .content:nth-child(3){
+        background-color: yellow;
+        grid-row: 4;
+        grid-column: 2;
+    }
+
+    /* Drinks */
+    .content:nth-child(4){
+       background-color: green;
+       grid-row: 5;
+       grid-column: 2;
+    
+    }
+
+    /* Coffee&Tea */
+    .content:nth-child(5){
+         background-color: blue;
+         grid-row: 6;
+         grid-column: 2;
+    }
+
+    /* Cool Drinks */
+    .content:nth-child(6){
+        background-color: indigo;
+        grid-row: 7;
+        grid-column: 2;
+    }
+    /* Coffee&Croissant imgs */
+    .content:nth-child(7){
+        background-color: violet;
+        /* grid-row: 8;
+        grid-column: 2; */
+        display: none;
+    }
+    /* Merengue&Tea imgs */
+    .content:nth-child(8){
+        background-color: brown;
+        /* grid-row: 8;
+        grid-column: 2; */
+        display: none;
+    }
+}
+
+
+
+
 /* footer */
 .footer {
     position: relative;
+    display: flex;
     width: 100%;
     bottom: 0px;
-    background-color:#95261F;
+    background-color:#00657C;
     height: 81px;
+    align-items: center;
+    
   }
+
+.f-child{
+    height: 54px;
+    /* background-color: green; */
+}
 
 .location{
     display: flex;
@@ -318,13 +385,16 @@ align-items: center;
     height: 40px;
 }
 
+.footer:nth-child(1){
+    justify-self: flex-end;
+}
 .soc-med{
-    display: flex;
-    flex-shrink: 1;
-    /* float: right; */
-    /* justify-content: center; */
-    /* position: relative; */
-    /* align-items: center; */  
+    gap: 10px;
+}
+
+.grid-col-span-2 img{
+    width: 40px;
+    height: auto;
 }
 
 .soc-med img{
