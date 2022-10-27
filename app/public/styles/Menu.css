@@ -8,10 +8,17 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     display: grid;
-    gap: 20px;
+    gap: 46px;
+    
+    grid-template-rows: 81px 610px 81px;
     background-color: #EDE5BB;
     
 }
+
+header{
+    grid-row: 1;
+}
+
 
 .bpholder{
     margin-left: 25px;
@@ -156,6 +163,8 @@ li.active{
 /* Desktop Body */
 
 .main-bdy{
+    grid-row: 2/3;
+
     display: grid;
     grid-template-columns: repeat(12,1fr);
 }
@@ -239,6 +248,7 @@ td{
     /* min-height: 700px; */
     grid-template-rows: 10px 30px 400px 80px 10px;
     grid-template-columns: 10px repeat(8, 1fr) 10px;
+    /* color: #95261F; */
     background-color: #BAD3EE;
     /* margin: 0 15px; */
 
@@ -412,6 +422,7 @@ td{
 
 /* footer */
 .footer {
+    grid-row: 3;
     position: relative;
     display: flex;
     width: 100%;
@@ -419,7 +430,7 @@ td{
     background-color:#00657C;
     height: 81px;
     align-items: center;
-    
+    /* margin-top: 52px; */
   }
 
 .f-child{
@@ -429,9 +440,18 @@ td{
 
 .location{
     display: flex;
-    flex-shrink: 1;
+   
+    /* flex-shrink: 1; */
 }
 
+.location p{
+    /* text-align: center; */
+    /* height: auto; */
+    align-self: center;
+    font-size: 20px;
+    /* color: #95261F; */
+    color: #EDE5BB;
+}
 
 .location img{
     width: 40px;
