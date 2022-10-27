@@ -260,32 +260,9 @@ td{
     height: 40px;
 }
 
-/* .m-l-g-1{
-    display: grid;
-    grid-template-rows: repeat(6,1fr);
-} */
-
-/* .l-g-1:nth-child(1){
-    grid-row: 1;
+.cd-child{
+    height: 30px;
 }
-.l-g-1:nth-child(2){
-    grid-row: 2;
-}
-.l-g-1:nth-child(3){
-    grid-row: 3;
-}
-.l-g-1:nth-child(4){
-    grid-row: 4;
-}
-.l-g-1:nth-child(5){
-    grid-row: 5;
-}
-
-.l-g-1:nth-child(6){
-    background-color: red;
-    grid-row: 6/7;
-} */
-
 
 .pname{
     vertical-align: top;
@@ -301,11 +278,10 @@ td{
 }
 
 .li-price{
-    /* margin-top: 2px; */
-    /* float: inline-end; */
     vertical-align: top;
 }
 
+/* Image properties */
 .grid-col-span-2 img{
     width: 80px;
     height: auto;
@@ -413,6 +389,7 @@ td{
         grid-row: 7;
         grid-column: 2;
     }
+
     /* Coffee&Croissant imgs */
     .content:nth-child(7){
         background-color: violet;
@@ -427,6 +404,7 @@ td{
         grid-column: 2; */
         display: none;
     }
+
 }
 
 
