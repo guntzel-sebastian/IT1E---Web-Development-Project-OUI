@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    gap: 20px;
+    background-color: #EDE5BB;
+    
+}
+
+.bpholder{
+    margin-left: 25px;
+}
+
+
+/* Desktop Nav bar */
+.navbar {
+    height: 81px;
+    width: 100%;
+    background-color: #00657C;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    /* background-color:#EDE5BB; */
+     
+}
+
+.Lholder{
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0; 
+}
+
+.logo{
+    width: 142px;
+    height: 81px;
+}
+
+
+.nav-desktop{
+    display: flex;
+
+    
+}
+
+.nav-desktop ul{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-desktop li{
+    width: 200px;
+}
+
+.nav-desktop li a{
+    display: block;
+    padding:31px;
+    color:#EDE5BB;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+.nav-desktop li:hover{
+    background-color: #03A1C5;
+}
+
+#hamburger-btn{
+    display: none;
+}
+
+
+.nav-mobile{
+    display: none;
+}
+
+.nav-list-mobile{
+    display: none;
+    
+}
+
+.active{
+     background-color: #004959;
+}
+
+/* Mobile navbar */
+@media screen and (max-width: 900px) {
+    
+.nav-desktop{
+    display: none;
+}
+#hamburger-btn{
+    display: block;
+    width: 70px;
+    height: 40px;
+    align-self: center;
+    color: #EDE5BB;
+    background-color: #00657C;
+    border: 0;
+    font-size: 35px;
+}
+
+.nav-list-mobile{
+    display: block;
+}
+
+.nav-mobile{
+    width: 55% ;
+    position: relative;
+    height: 0px;
+    justify-content: flex-end;
+    float: right;
+    flex-shrink: 1;
+}
+
+.nav-list-mobile li{
+    height: 70px;
+    line-height: 70px;
+    align-items: center;
+    text-align: center;
+    background-color: #00657C;
+    transition: all .5s;
+    /* box-shadow: 0 0 100% 100% black; */
+    /* color: #EDE5BB; */
+}
+
+.nav-list-mobile li a {
+    color: #EDE5BB;
+    font-size: 31px;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+.nav-list-mobile li:hover{
+    background: #03A1C5;
+    transition: 0.5s;
+} 
+
+li.active{
+    background-color:#004959;
+}
+
+
+}
+
+
+/* Desktop Body */
+
+.main-bdy{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+/* Food */
+.content:nth-child(1){       
+    background-color: red;
+    /* grid-column: 1; */
+    grid-row: 2;
+    grid-column: 2/3;
+}
+
+/* Pain/Croiss */
+.content:nth-child(2){
+    /* grid-area: two; */
+     background-color: orange;
+     grid-row: 3;
+     grid-column: 2/4;
+}
+
+/* Sweet */
+.content:nth-child(3){
+    background-color: yellow;
+    grid-row: 3;
+    grid-column: 4/6;
+}
+
+/* Drinks */
+.content:nth-child(4){
+   background-color: green;
+   grid-row: 2;
+   grid-column: 6/7;
+ 
+}
+
+/* Coffee&Tea */
+.content:nth-child(5){
+     background-color: blue;
+     grid-row: 3;
+     grid-column: 6/8;
+}
+
+/* Cool Drinks */
+.content:nth-child(6){
+    background-color: indigo;
+    grid-row: 3;
+    grid-column: 8/10;
+}
+/* Coffee&Croissant imgs */
+.content:nth-child(7){
+    background-color: violet;
+    grid-row: 4;
+    grid-column: 2/4;
+}
+/* Merengue&Tea imgs */
+.content:nth-child(8){
+    background-color: brown;
+    grid-row: 4;
+    grid-column: 8/10;
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
+}
+
+.grid-col-span-2 p{
+    font-size: 25px;
+
+    /* align-items: center; */
+}
+
+td{
+    font-size: 14px;
+}
+
+.m-content-grid{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    gap: 20px;
+    /* min-height: 700px; */
+    grid-template-rows: 10px 80px 400px 80px 10px;
+    grid-template-columns: 10px repeat(8, 1fr) 10px;
+    background-color: #00657C;
+    /* margin: 0 15px; */
+
+}
+
+.m-list{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    border-spacing: 0;
+    border-collapse: 0;
+    /* background-color: green; */
+} 
+
+.m-list th{
+    text-align: left;
+    vertical-align: top;
+}
+
+.price{
+    text-align: right;
+}
+
+.li-price{
+    /* margin-top: 2px; */
+    /* float: inline-end; */
+    vertical-align: top;
+}
+
+/* Mobile body */
+@media screen and (max-width: 900px){
+    .main-bdy{
+        display: grid;
+        grid-template-columns: 20px repeat(3,1fr) 20px;
+    }
+
+    .m-content-grid{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        gap: 20px;
+        /* min-height: 700px; */
+        grid-template-rows: 10px 50px repeat(2,1fr)  50px repeat(2,1fr) 10px;
+        grid-template-columns: 10px 1fr 10px;
+        background-color: #00657C;
+        /* margin: 0 15px; */
+    
+    }
+
+    .grid-col-span-2{
+        grid-column: 1;
+    }
+
+     /* Food */
+    .content:nth-child(1){       
+        background-color: red;
+       
+        grid-row: 2;
+        /* grid-column: 1; */
+        grid-column: 2;
+    }
+
+    /* Pain/Croiss */
+    .content:nth-child(2){
+        /* grid-area: two; */
+         background-color: orange;
+         grid-row: 3;
+         grid-column:2;
+    }
+
+    /* Sweet */
+    .content:nth-child(3){
+        background-color: yellow;
+        grid-row: 4;
+        grid-column: 2;
+    }
+
+    /* Drinks */
+    .content:nth-child(4){
+       background-color: green;
+       grid-row: 5;
+       grid-column: 2;
+    
+    }
+
+    /* Coffee&Tea */
+    .content:nth-child(5){
+         background-color: blue;
+         grid-row: 6;
+         grid-column: 2;
+    }
+
+    /* Cool Drinks */
+    .content:nth-child(6){
+        background-color: indigo;
+        grid-row: 7;
+        grid-column: 2;
+    }
+    /* Coffee&Croissant imgs */
+    .content:nth-child(7){
+        background-color: violet;
+        /* grid-row: 8;
+        grid-column: 2; */
+        display: none;
+    }
+    /* Merengue&Tea imgs */
+    .content:nth-child(8){
+        background-color: brown;
+        /* grid-row: 8;
+        grid-column: 2; */
+        display: none;
+    }
+}
+
+
+
+
+/* footer */
+.footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    bottom: 0px;
+    background-color:#00657C;
+    height: 81px;
+    align-items: center;
+    
+  }
+
+.f-child{
+    height: 54px;
+    /* background-color: green; */
+}
+
+.location{
+    display: flex;
+    flex-shrink: 1;
+}
+
+
+.location img{
+    width: 40px;
+    height: 40px;
+}
+
+.footer:nth-child(1){
+    justify-self: flex-end;
+}
+.soc-med{
+    gap: 10px;
+}
+
+.grid-col-span-2 img{
+    width: 40px;
+    height: auto;
+}
+
+.soc-med img{
+    width: 40px;
+    height: auto;
+}

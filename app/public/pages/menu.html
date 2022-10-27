@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
     rel="stylesheet">
     <!-- My css -->
-    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/menustyle.css">
     <!--Font Awesome script-->
     <script src="https://kit.fontawesome.com/08626bfbba.js" crossorigin="anonymous"></script>  
     <title>Menu</title>
@@ -18,15 +18,15 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="lholder">
+            <div class="Lholder">
                 <img class="logo" src="../img/Logo-02.png">
             </div>
             <!-- <input type="button" id="check" class="fas fa-bars">
             <label for="check" class="nav-btn">
                 <i  class="fas fa-bars"></i>
             </label> -->
-            <button class="fas fa-bars" id="check"></button>
-            <div class="nav-lis"> 
+            <button class="fas fa-bars" id="hamburger-btn"></button>
+            <div class="nav-desktop">  
                
                 <ul>
                     <li><a href="../index.html">Homepage</a></li>
@@ -36,9 +36,9 @@
                 </ul>  
             </div>
         </nav>
-        <div class="nav-list" id="nav-list" > 
+        <div class="nav-mobile" id="nav-mobile" > 
                
-            <ul  class="nav-li">
+            <ul  class="nav-list-mobile">
                 <li><a href="../index.html">Homepage</a></li>
                 <li class="active"><a href="#">Menu</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -47,7 +47,7 @@
         </div>
     </header>
 
-    <main class="main-bdy">
+    <main id="main-container" class="main-bdy">
         <article class="m-content-grid">
             <article class="content grid-col-span-2">
                 <p style="text-align: center;">Food</p>
@@ -241,24 +241,34 @@
                     </tr>
                 </table>
             </article>
+
+            <article class="content grid-col-span-2">
+                <img src="../img/lb_coffee.png">
+                <img src="../img/lb_croissant.png">
+            </article>
+
+            <article class="content grid-col-span-2">
+                <img src="../img/lb_merengue.png">
+                <img src="../img/lb_tea.png">
+            </article>
         </article>
     </main>
 
     <footer class="footer">
-        <div class="">
-            <div class="location">
+      
+            <div class="f-child location">
                 <img src="../img/pin.png">
             </div>
 
-            <div class="soc-med">
+            <span class="f-child soc-med">
                 <img src="../img/ytt.png" alt="youtube">
                 <img src="../img/tww.png" alt="twitter">
                 <img src="../img/fcb.png" alt="facebook">
                 <img src="../img/instaa.png" alt="instagram">
-            </div>
-        </div>
+            </span>
+    
     </footer>
     
-    <script src="app.js"></script>
+    <script src="../js/deskapp.js"></script>
 </body>
 </html>

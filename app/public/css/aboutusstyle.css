@@ -1,0 +1,307 @@
+#container{
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	margin: 0;
+}
+body{
+	margin: 0;
+}
+/* main settings for header */
+header{
+	display: grid;
+	grid-column: 11/1;
+	position: relative;
+	grid-template-columns: subgrid;
+	grid-template-columns: repeat(10, 1fr);
+	background-color: #00657C;
+}
+
+/* logo settings */
+.titlelocation{
+	grid-column: 1/3;
+	display: flex;
+	align-items: center;
+}
+.titlelocation img{
+	width: 150px;
+	height: auto;
+}
+
+/* nav settings */
+header > ul{
+	grid-column: 7/11;
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	justify-content: space-evenly;
+	background-color: #00657C;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+header a{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+}
+
+header a:hover{
+	background-color: #004959;
+}
+
+header a:active{
+	background-color: #007F9C;
+}
+
+/*hide drop down list*/
+.dropdown{
+	display: none;
+}
+
+/* body settings */
+.contentlocation{
+	display: flex;
+	grid-column: 1/11;
+	background-image: url("../Image/background.png");
+	background-size: cover;
+	height: 750px;
+	justify-content: center;
+}
+
+/* content settings */
+.content{
+	position: relative;
+	top: 50px;
+	width: 750px;
+	height: 650px;
+	color: #95261F;
+	background-color: #BAD3EE;
+	box-shadow: 1px 1px 1px 1px #5f5f5f;
+		column-count:2;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-gap: 30px;
+	align-items: center;    
+}
+
+
+/* content settings: left part */
+.contentleft{
+  align-items: center;
+  margin: 50px;
+}
+
+/* content settings: right part */
+.contentright{
+ align-items: center;
+ margin: 50px;
+}
+
+/* content word settings */
+.content h1{
+	font-family: "Caveat";
+	src: url("../Caveat-Regular.ttf");
+	font-size: 25px;
+	text-align:right;
+}
+.content h2{
+	font-family: Circular Std;
+	font-size: 20px;
+	text-align:right;
+}
+.content p{
+	font-family: Circular Std;
+	font-size: 20px;
+	text-align:left;
+}
+
+/* icon of body part settings */
+.content img{
+	width: 100px;
+	height: auto;
+}
+#coffee{
+	position: relative;
+	bottom: 475px;
+  right: 350px;
+	transform:rotate(25deg);
+}
+#merengue{
+	position: relative;
+	bottom: 10px;
+  left: 100px;
+	transform:rotate(-25deg)
+}
+
+/* main settings for footer */
+footer{
+	display: grid;
+	grid-column: 11/1;
+	position: relative;
+	grid-template-columns: subgrid;
+	grid-template-columns: repeat(10, 1fr);
+	background-color: #00657C;
+	height: auto;
+}
+
+/* location settings */
+.location{
+	grid-column: 1/3;
+	display: flex;
+	align-items: center;
+}
+.location img{
+	width: 50px;
+	height: auto;
+}
+.location p{
+	color: #EDE5BB;
+	font-size: 15px;
+}
+
+/* social media icon settings */
+.socialicon{
+	grid-column: 8/11;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.socialicon img{
+	width: 50px;
+	height: auto;
+}
+
+/*mobile version*/
+@media screen and (max-width: 576px){
+	body{
+		width: auto;
+		height: auto;
+	}
+
+	header > ul{
+		display: none;
+	}
+
+	/*setting drop down button container*/
+	.dropdown {
+		grid-column: 7/9;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+	}
+
+	/*setting drop down button style*/
+	.dropbtn {
+	  background-color: #00657C;
+	  color: white;
+	  font-size: 25px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	.dropbtn img{
+		width: 50px;
+		padding-left: 40px;
+	  padding-top: 15px;
+	  padding-right: 40px;
+	}	
+
+	/*drop down content hidden by default*/
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #00657C;
+	  min-width: 100px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  align-items: center;
+	  z-index: 1;
+	  top: 80px;
+	}
+
+	/*drop down list*/
+	.dropdown-content a {
+	  color: white;
+	  padding: 14px;
+	  margin: 15px;
+	  font-size: 25px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	/*show drop down list and change button background color when drop down*/
+	.dropdown:hover .dropdown-content {
+		display: block;
+		background-color: #004959;
+	}
+
+	/*change background color when tap drop down list*/
+	.dropdown-content a:hover {
+		background-color: #007F9C;
+	}
+
+	/*body mobile version  setting*/
+  .contentlocation{
+    display: flex;
+    width: unset;
+		height: unset;
+    grid-column: 1/11;
+    background-image: url("../Image/background_mobile.png");
+  }
+
+  /*content mobile version setting*/
+  .content{
+		position: relative;
+		top: 50px;
+		width: unset;
+		height: unset;
+		color: #95261F;
+		background-color: #BAD3EE;
+		box-shadow: 1px 1px 1px 1px #5f5f5f;   
+		align-items: center; 
+		justify-items: center;
+		column-count:1;
+		-moz-column-count:1; /* Firefox */
+		-webkit-column-count:1; /* Safari and Chrome */
+		margin: 20px;
+	  top: 2px;
+	}
+	.content h1{
+		font-family: "Caveat";
+		src: url("../Caveat-Regular.ttf");
+		font-size: 25px;
+		text-align:center;
+	}
+	.content h2{
+		font-family: Circular Std;
+		font-size: 20px;
+		text-align:center;
+	}
+	.content p{
+		font-family: Circular Std;
+		font-size: 20px;
+		text-align:center;
+	}
+
+	/*hide icon*/
+  #coffee{
+    display:none;
+  }
+  #merengue{
+    display:none;
+  }
+
+	/*footer setting*/
+	footer img{
+		width: 85px;
+		margin: 2%;
+	}
+	.location p{
+		display:none;
+	}
+	.socialicon{
+		grid-column: 6/10;
+	}
+}
+

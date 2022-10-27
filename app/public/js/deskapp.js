@@ -18,4 +18,4 @@ dropdown.addEventListener('click', function(){
 function closeNav(){
    document.getElementById('nav-mobile').style.display='none';
 }
-document.querySelector('#main').addEventListener('click',closeNav)
+document.querySelector('#main-container').addEventListener('click',closeNav)
