@@ -147,8 +147,8 @@ align-items: center;
 }
 
 .pname li{
-    margin-left: 10px;
-    font-size: smaller;
+    margin-left: 12px;
+    /* font-size: smaller; */
 }
 
 @media screen and (min-width: 800px){
