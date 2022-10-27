@@ -9,7 +9,6 @@ body{
     font-family: 'Courier New', Courier, monospace;
     display: grid;
     gap: 46px;
-    
     grid-template-rows: 81px 610px 81px;
     background-color: #EDE5BB;
     
