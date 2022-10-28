@@ -392,6 +392,11 @@ td{
     .grid-col-span-2{
         grid-column: 1;
     }
+    .grid-col-span-2 p{
+        text-align: center;
+        /* height: 50px; */
+    }
+
 
      /* Food */
     .content:nth-child(1){       
