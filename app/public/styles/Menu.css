@@ -163,7 +163,6 @@ li.active{
 
 .main-bdy{
     grid-row: 2/3;
-
     display: grid;
     grid-template-columns: repeat(12,1fr);
 }
@@ -273,14 +272,18 @@ td{
     height: 30px;
 }
 
+.f-item{
+    vertical-align: top;
+}
+
 #s-first{
     height: 124px;
     vertical-align: top;
 }
 
 
-#s-1-space{
-    height:4px;
+.s-1-space{
+    height:5px;
 } 
 
 .s-mid{
@@ -302,9 +305,10 @@ td{
     height: 248.85px;
 }
 
-.pname{
-    /* vertical-align: top; */
-}
+/* .pname{
+     vertical-align: top;
+} 
+*/
 
 .pname li{
     margin-left: 11px;
