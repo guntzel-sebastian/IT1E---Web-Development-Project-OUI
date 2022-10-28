@@ -64,7 +64,7 @@ header a:active{
 .contentlocation{
 	display: flex;
 	grid-column: 1/11;
-	background-image: url("../Image/background.png");
+	background-image: url("../img/background.png");
 	background-size: cover;
 	height: 750px;
 	justify-content: center;
@@ -134,7 +134,7 @@ input[type=text]{
 /* content word settings */
 .content h1{
 	font-family: "Caveat";
-	src: url("../Font/Caveat-Regular.ttf");
+	src: url("../fonts/Caveat-Regular.ttf");
 	font-size: 25px;
 }
 .content h2{
@@ -274,7 +274,7 @@ footer{
     width: unset;
 		height: unset;
     grid-column: 1/11;
-    background-image: url("../Image/background_mobile.png");
+    background-image: url("../img/background_mobile.png");
   }
   
   /*content mobile version setting*/
@@ -294,7 +294,7 @@ footer{
 	}
 	.content h1{
 		font-family: "Caveat";
-		src: url("../Caveat-Regular.ttf");
+		src: url("../fonts/Caveat-Regular.ttf");
 		font-size: 25px;
 		text-align:center;
 	}

@@ -63,7 +63,7 @@ header a:active{
 .contentlocation{
 	display: flex;
 	grid-column: 1/11;
-	background-image: url("../Image/background.png");
+	background-image: url("../img/background.png");
 	background-size: cover;
 	height: 750px;
 	justify-content: center;
@@ -247,7 +247,7 @@ footer{
     width: unset;
 		height: unset;
     grid-column: 1/11;
-    background-image: url("../Image/background_mobile.png");
+    background-image: url("../img/background_mobile.png");
   }
 
   /*content mobile version setting*/

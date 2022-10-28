@@ -1,5 +1,12 @@
 /*styles*/
 
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
 	padding: 0;
@@ -30,16 +37,10 @@ ul{
 
 #mainContainer{
     display: grid;
-    grid-template-columns: repeate(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
 }
 /* nav */
 
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-}
 
 body{
     font-family: 'Courier New', Courier, monospace;
@@ -49,14 +50,14 @@ body{
     
 }
 
-
 .bpholder{
     margin-left: 25px;
 }
 
 
-/* Nav bar */
+/* Desktop Nav bar */
 .navbar {
+	grid-column: 1/9;
     height: 81px;
     width: 100%;
     background-color: #00657C;
@@ -249,7 +250,7 @@ ul{
 
 .welcome{
 	margin: 50px;
-	grid-column: 1/8;
+	grid-column: 1/9;
 	display: flex;
 	text-align: left;
 	font-family:"Caveat";
@@ -257,7 +258,7 @@ ul{
 }
 
 .bodyText{
-	flex: 3 2 auto;
+	flex: 50%;
 	font-size: 40px;
 	display: flex;
 	flex-direction: column;
@@ -269,7 +270,7 @@ ul{
 }
 
 .buttons{
-	flex: 2 1 0 auto;
+	flex: 50%;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
@@ -287,8 +288,8 @@ ul{
 	background-color: #00657C;
 	color: #BAD3EE;
 	font-size: 30px;
-	height: 330px;
-	width: 280px;
+	height: 280px;
+	width: 220px;
 	align-items: center;
 	justify-content: center;
 	background-size: cover;
@@ -301,8 +302,8 @@ ul{
 	background-color: #CCC59A;
 	color: #00657C;
 	font-size: 30px;
-	height: 330px;
-	width: 280px;
+	height: 280px;
+	width: 220px;
 	align-items: center;
 	justify-content: center;
 	background-size: cover;
@@ -315,8 +316,8 @@ ul{
 	background-color: #95261F;
 	color: #EDE5BB;
 	font-size: 30px;
-	height: 330px;
-	width: 280px;
+	height: 280px;
+	width: 220px;
 	align-items: center;
 	justify-content: center;
 	background-size: cover;
@@ -329,29 +330,29 @@ ul{
 	background-color: #BAD3EE;
 	color: #95261F;
 	font-size: 30px;
-	height: 330px;
-	width: 280px;
+	height: 280px;
+	width: 220px;
 	align-items: center;
 	justify-content: center;
 	background-size: cover;
 	margin: 10px;
 }
 
-#videoEmbed{
+.videoEmbed{
 	margin: 50px;
-	grid-column: 1/8;
+	grid-column: 1/9;
 	display: flex;
-	width: 40%;
 	background-color: #BAD3EE;
 	height: 450px;
 }
 
 .videoPlayer{
 	background-color: white;
-		
+	flex: 45%;	
 }
-
-
+.videoTxt{
+	flex: 55%;
+}
 
 /* footer */
 footer{
