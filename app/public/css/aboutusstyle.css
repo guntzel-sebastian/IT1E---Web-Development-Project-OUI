@@ -137,12 +137,12 @@ header a:active{
 /* main settings for footer */
 footer{
 	display: grid;
-	grid-column: 11/1;
+	grid-column: 1/11;
 	position: relative;
 	grid-template-columns: subgrid;
 	grid-template-columns: repeat(10, 1fr);
 	background-color: #00657C;
-	height: auto;
+	height: 100px;
 }
 
 /* location settings */
@@ -166,6 +166,7 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	list-style-type: none;
 }
 .socialicon img{
 	width: 50px;

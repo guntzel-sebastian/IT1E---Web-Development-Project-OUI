@@ -163,7 +163,6 @@ footer{
 	display: grid;
 	grid-column: 1/11;
 	position: relative;
-	grid-template-columns: subgrid;
 	grid-template-columns: repeat(10, 1fr);
 	background-color: #00657C;
 	height: 100px;
@@ -181,21 +180,26 @@ footer{
 }
 .location p{
 	color: #EDE5BB;
-	font-size: 15px;
+	font-size: 20px;
 }
 
-/* social media icon settings */
-.socialicon{
-	grid-column: 8/11;
+
+
+footer > ul {
+	/* social media icon settings */
 	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+	grid-column: 8/11;
 	list-style-type: none;
+	justify-content: space-around;
+
 }
-.socialicon img{
+
+footer > ul > li > a img{
 	width: 50px;
-	height: auto;
+	height: 45px;
 }
+
+
 
 @media screen and (max-width: 576px){
 	body{
@@ -331,18 +335,3 @@ footer{
   #croissant{
     display:none;
   }
-
-	/*footer setting*/
-	footer{
-		width: auto;
-	}
-	footer img{
-		width: 85px;
-	}
-	.location p{
-		display:none;
-	}
-	.socialicon{
-		grid-column: 6/10;
-	}
-}
