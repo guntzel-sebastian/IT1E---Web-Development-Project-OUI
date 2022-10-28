@@ -9,7 +9,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     display: grid;
     gap: 46px;
-    grid-template-rows: 81px 644px 81px;
+    grid-template-rows: 81px 664px 81px;
     background-color: #EDE5BB;
     
 }
@@ -244,7 +244,7 @@ td{
     grid-column-end: 12;
     gap: 20px;
     /* min-height: 700px; */
-    grid-template-rows: 10px 30px 434px 80px 10px;
+    grid-template-rows: 10px 30px 434px 100px 10px;
     grid-template-columns: 10px repeat(8, 1fr) 10px;
     /* color: #95261F; */
     background-color: #BAD3EE;
@@ -333,6 +333,10 @@ td{
     /* background-color: green; */
     display: flex;
     gap: 20px;
+}
+
+.bdy-img-grp1:nth-child(2){
+    justify-items: flex-end;
 }
 
 .bdy-img-grp2{
