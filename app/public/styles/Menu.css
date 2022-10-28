@@ -362,7 +362,7 @@ td{
 @media screen and (max-width: 900px){
 
     body{
-        grid-template-rows: 81px 1550px 81px;
+        grid-template-rows: 81px 1620px 81px;
         gap: 46px;
     }
 
@@ -382,7 +382,7 @@ td{
         grid-column-end: 5;
         gap: 20px;
         /* min-height: 700px; */
-        grid-template-rows: 10px 50px repeat(2,1fr)  50px repeat(2,1fr) 10px;
+        grid-template-rows: 10px 50px 440px 286px  50px 340px 286px 10px;
         grid-template-columns: 10px 1fr 10px;
         background-color: #00657C;
         /* margin: 0 15px; */
@@ -397,7 +397,9 @@ td{
         /* height: 50px; */
     }
 
-
+    .cd-child{
+        height: 30.8px;
+    }
      /* Food */
     .content:nth-child(1){       
         background-color: red;
@@ -415,12 +417,15 @@ td{
     }
 
     /* Sweet */
+
     .content:nth-child(3){
         background-color: yellow;
         grid-row: 4;
         grid-column: 2;
     }
-
+     #s-last{
+        height: 30.8px;
+     }
     /* Drinks */
     .content:nth-child(4){
        background-color: green;
@@ -436,11 +441,19 @@ td{
          grid-column: 2;
     }
 
+    #d-last{
+        height: 65px;
+    }
+
     /* Cool Drinks */
     .content:nth-child(6){
         background-color: indigo;
         grid-row: 7;
         grid-column: 2;
+    }
+
+    #cd-last{
+        height: 30px;
     }
 
     /* Coffee&Croissant imgs */
