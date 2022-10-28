@@ -274,24 +274,23 @@ td{
 }
 
 #s-first{
-    height: 134px;
-    /* vertical-align: top; */
-    /* padding-top: 10px; */
-    /* text-align: top; */
-}
-
-#s-f-p{
-    background-color: green;
+    height: 124px;
     vertical-align: top;
 }
+
 
 #s-1-space{
     height:4px;
 } 
+
+.s-mid{
+    vertical-align: top
+}
 #s-last{
-    height: 170px;
+    height: 172.1px;
     vertical-align: top;
 }
+
 
 #d-last{
     /* margin-top: 2px; */
@@ -300,6 +299,7 @@ td{
 
 #cd-last{
     vertical-align: top;
+    height: 248.85px;
 }
 
 .pname{
@@ -308,7 +308,7 @@ td{
 
 .pname li{
     margin-left: 11px;
-    font-size: small;
+    font-size: 12px;
 }
 
 .price{
