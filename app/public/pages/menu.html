@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
     rel="stylesheet">
     <!-- My css -->
-    <link rel="stylesheet" href="../css/menustyle.css">
+    <link rel="stylesheet" href="../css/Menu.css">
     <!--Font Awesome script-->
     <script src="https://kit.fontawesome.com/08626bfbba.js" crossorigin="anonymous"></script>  
     <title>Menu</title>
@@ -21,28 +21,28 @@
             <div class="Lholder">
                 <img class="logo" src="../img/Logo-02.png">
             </div>
-            <!-- <input type="button" id="check" class="fas fa-bars">
-            <label for="check" class="nav-btn">
-                <i  class="fas fa-bars"></i>
-            </label> -->
+
             <button class="fas fa-bars" id="hamburger-btn"></button>
-            <div class="nav-desktop">  
+
+            <div class="nav-desktop"> 
                
                 <ul>
-                    <li><a href="../index.html">Homepage</a></li>
-                    <li class="active"><a href="menu.html"><u>Menu</u></a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="active"><a href="menu.html">Menu</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>  
             </div>
+
         </nav>
+
         <div class="nav-mobile" id="nav-mobile" > 
                
             <ul  class="nav-list-mobile">
                 <li><a href="../index.html">Homepage</a></li>
                 <li class="active"><a href="#">Menu</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>  
         </div>
     </header>
@@ -50,16 +50,12 @@
     <main id="main-container" class="main-bdy">
         <article class="m-content-grid">
             <article class="content grid-col-span-2">
-                <p style="text-align: center;">Food</p>
-                <!-- <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                </p> -->
+                <p>Food</p>
             </article>
 
             <article class="content">
                 <!-- <p>Pain Croissant or Petit Pain</p> -->
-                <table class="m-list">
+                <table id="p_table" class="m-list">
                     <tr>
                         <th colspan="2">Pain Croissant or Petit Pain</th>
                     </tr>
@@ -119,12 +115,14 @@
             </article>
 
             <article class="content">
-                <table class="m-list">
+                <table id="s_table" class="m-list">
                     <tr>
                         <th colspan="2">Sweet</th>
                     </tr>
-                    <tr>
-                        <td class="pname" style="height: 150px;" >Macarons(3 pieces)
+                    <tr id="s-first">
+                        <td class="pname">
+                            <p style="height: 5px;">&nbsp;</p>
+                            Macarons(3 pieces)
                             <ul>
                                 <li>Vanilla</li>
                                 <li>Strawberries and Cream</li>
@@ -135,21 +133,24 @@
                                 <li>Mocha/Coffee</li>
                             </ul>
                         </td>
-                        <td class="price li-price">€ 6,00</td>
+                        <td id="s-f-p" class="price li-price">
+                        <p id="s-1-space" >&nbsp;</p>
+                            € 6,00
+                        </td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child s-mid">
                         <td>Paris-Brest</td>
                         <td class="price">€ 4,70</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child s-mid">
                         <td>Cream Puffs</td>
                         <td class="price">€ 4,70</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child s-mid">
                         <td>Eclair</td>
                         <td class="price">€ 3,90</td>
                     </tr>
-                    <tr>
+                    <tr id="s-last">
                         <td>Millefeuille</td>
                         <td class="price">€ 3,90</td>
                     </tr>
@@ -157,45 +158,43 @@
             </article>
 
             <article class="content grid-col-span-2">
-                <p style="text-align: center;">Drinks</p>
-                <!-- <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                </p> -->
+                <p>Drinks</p>
             </article>
 
             <article class="content">
-                
-                <table class="m-list">
+                    <!-- Coffee & Tea -->
+                <table id="cof_table" class="m-list">
                     <tr>
                         <th colspan="2">Coffee & Tea</th>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Cappucino</td>
                         <td class="price">€ 6,00</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Latte</td>
                         <td class="price">€ 4,70</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Mocha</td>
                         <td class="price">€ 4,70</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Espresso</td>
                         <td class="price">€ 3,90</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Americano</td>
                         <td class="price">€ 3,90</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Flat white</td>
                         <td class="price">€ 3,90</td>
                     </tr>
-                    <tr>
-                        <td class="pname">Tea
+                    <tr id="d-last">
+                        <td class="pname">
+                            <p style="height: 6px;">&nbsp;</p>
+                            Tea
                             <ul>
                                 <li>Black tea</li>
                                 <li>Green tea</li>
@@ -204,7 +203,10 @@
                                 <li>Rooibos</li>
                             </ul>
                         </td>
-                        <td class="price li-price">€ 3,90</td>
+                        <td class="price li-price">
+                            <p style="height: 6px;">&nbsp;</p>
+                            € 3,90
+                        </td>
                     </tr>
                 </table>
             </article>
@@ -215,41 +217,47 @@
                     <tr>
                         <th colspan="2">Cool Drinks</th>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Home-made lemonade</td>
                         <td class="price">€ 2,30</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Jus d'organe</td>
                         <td class="price">€ 2,30</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Apple juice</td>
                         <td class="price">€ 2,30</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Ice tea</td>
                         <td class="price">€ 2,30</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Flat water</td>
                         <td class="price">€ 2,30</td>
                     </tr>
-                    <tr>
-                        <td>Sparkling water</td>
-                        <td class="price">€ 2,30</td>
+                    <tr id="cd-last">
+                        <td>
+                            <p style="height: 5px;">&nbsp;</p>  
+                            Sparkling water
+                        </td>
+                        <td  class="price">
+                            <p style="height: 5px;">&nbsp;</p>  
+                            € 2,30
+                        </td>
                     </tr>
                 </table>
             </article>
 
-            <article class="content grid-col-span-2">
-                <img src="../img/lb_coffee.png">
-                <img src="../img/lb_croissant.png">
+            <article class="content grid-col-span-2 bdy-img-grp1">
+                <img id="cof-img" src="../img/red_coffee.png">
+                <img id="crois-img" src="../img/red_croissant.png">
             </article>
 
-            <article class="content grid-col-span-2">
-                <img src="../img/lb_merengue.png">
-                <img src="../img/lb_tea.png">
+            <article class="content grid-col-span-2 bdy-img-grp2">
+                <img id="mer-img" src="../img/red_merengue.png">
+                <img id="tea-img" src="../img/red_tea.png">
             </article>
         </article>
     </main>
@@ -258,6 +266,7 @@
       
             <div class="f-child location">
                 <img src="../img/pin.png">
+                <p>Grotedrip 31 | Groenigen</p>
             </div>
 
             <span class="f-child soc-med">
@@ -269,6 +278,6 @@
     
     </footer>
     
-    <script src="../js/deskapp.js"></script>
+    <script src="deskapp.js"></script>
 </body>
 </html>

@@ -23,28 +23,40 @@
 					<div class="nav-desktop">  
 					   
 						<ul>
-							<li class="active"><a href="index.html"><u>Homepage</u></a></li>
+							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="pages/menu.html">Menu</a></li>
 							<li><a href="pages/aboutus.html">About Us</a></li>
-							<li><a href="pages/contact.html">Contact</a></li>
+							<li><a href="pages/contact.php">Contact</a></li>
 						</ul>  
 					</div>
-				</nav>
+				<!--</nav>
 				<div class="nav-mobile" id="nav-mobile" > 
 					   
 					<ul  class="nav-list-mobile">
 						<li class="active"><a href="index.html">Homepage</a></li>
 						<li><a href="pages/menu.html">Menu</a></li>
 						<li><a href="pages/aboutus.html">About Us</a></li>
-						<li><a href="pages/contact.html">Contact</a></li>
+						<li><a href="pages/contact.php">Contact</a></li>
 					</ul>  
+				</div>-->
+				
+				<div class="dropdown"><!--drop down nav bar-->
+					<button class="dropbtn"><img src="../Image/dropbut.png" alt="dropbut"></button>
+						<div class="dropdown-content">
+						<a href="index.html">Home</a>
+		                <a href="pages/menu">Menu</a>
+		                <a href="pages/aboutus.html">About Us</a>
+		                <a href="pages/contact.php">Contact</a>
+					</div>
 				</div>
+
 			</header>
 
 			<section id="backsplash">
 				<div class="eiffel">
 					<img class="eiffelImg" src="img/eiffel65blue.png" alt="Eiffel Tower">
 					<h1>Welcome to OUI</h1>
+					<img class="caretDown" src="img/bluecaret.png" alt="More">
 				</div>
 			</section>
 
@@ -79,37 +91,46 @@
 						Macaron?
 					</div>
 				</div>
+				
+				<!--four icon only for mobile version-->
+				<div class="icon_mv">
+					<div class="icon_top">
+						<img src="img/coffee_icon_mv.png" alt="coffee_icon_mv">
+						<img src="img/cross_icon_mv.png" alt="cross_icon_mv">
+					</div>
+					<div class="icon_buttom">
+						<img src="img/mere_icon_mv.png" alt="mere_icon_mv">
+						<img src="img/tea_icon_mv.png" alt="tea_icon_mv">
+					</div>
+				</div>
 			</section>
 			
 			<div class="videoEmbed">
 				<div class="videoPlayer">
+				<iframe src="https://www.youtube.com/embed/st571DYYTR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<div class="videoTxt">
+					Want to keep up-to-date with everything OUI? You can follow us on our social media pages and sign up for our newsletter for a chance to win a free drink!
 				</div>
+				<img class="redTea" src="img/illustrations_red_tea.png" alt="tea">
 			</div>
-			
-			<footer><!--footer-->
+							<!--video text only for mobile version-->
+			<div class="videodis_mv">
+					<p>Want to keep up-to-date with everything OUI? You can follow us on our social media pages and sign up for our newsletter for a chance to win a free drink!</p>
+			</div>
 
-            	<div class="location">
-                	<img src="img/location.png" alt="location">
-                	<p>Grotedrip 31 | Groenigen</p>
-                </div>
-
-                <div class="socialicon"><!--social media icon-->
-
-	                <li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram"></a></li>
-	                <li><a href="https://www.facebook.com/"><img src="img/fcb.png" alt="Facebook"></a></li>
-					<li><a href="https://twitter.com/"><img src="img/twitter.png" alt="Twitter"></a></li>
-					<li><a href="https://www.youtube.com/"><img src="img/youtube.png" alt="YouTube"></a></li>
-
-                </div>
-                
-            </footer>	
-
+			<footer> 
+				<a>Grotedrip 31 | Groenigen</a>
+				<div class="footerApps">
+					<ul>
+						<li><a href="instagram.com"></a></li>
+						<li><a href="pages/facebook.com"></a></li>
+						<li><a href="pages/twitter.com"></a></li>
+						<li><a href="pages/youtube.com"></a></li>
+					</ul>
+				</div>
+			</footer>		
 		</div>
-
-		<script src="../js/deskapp.js"></script>
-
+		<script src="js/deskapp.js"></script>
 	</body>
-
 </html>
