@@ -342,9 +342,9 @@ td{
     justify-content: end;
 }
 
-#cof-img{
+/* #cof-img{
 
-}
+} */
 
 #crois-img{
     height: 70px;
@@ -357,10 +357,10 @@ td{
     transform:rotate(165deg);
     /* background-color: black; */
 }
-
+/* 
 #tea-img{
 
-}
+} */
 
 /* Mobile body */
 @media screen and (max-width: 900px){
