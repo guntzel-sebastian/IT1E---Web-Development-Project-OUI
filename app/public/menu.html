@@ -119,8 +119,8 @@
                     <tr>
                         <th colspan="2">Sweet</th>
                     </tr>
-                    <tr>
-                        <td class="pname" style="height: 150px;" >Macarons(3 pieces)
+                    <tr id="s-first">
+                        <td class="pname">Macarons(3 pieces)
                             <ul>
                                 <li>Vanilla</li>
                                 <li>Strawberries and Cream</li>
@@ -131,21 +131,24 @@
                                 <li>Mocha/Coffee</li>
                             </ul>
                         </td>
-                        <td class="price li-price">€ 6,00</td>
+                        <td id="s-f-p" class="price li-price">
+                        <p id="s-1-space" >&nbsp;</p>
+                            € 6,00
+                        </td>
                     </tr>
-                    <tr>
+                    <tr style="vertical-align: top;" class="cd-child">
                         <td>Paris-Brest</td>
                         <td class="price">€ 4,70</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Cream Puffs</td>
                         <td class="price">€ 4,70</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Eclair</td>
                         <td class="price">€ 3,90</td>
                     </tr>
-                    <tr>
+                    <tr id="s-last">
                         <td>Millefeuille</td>
                         <td class="price">€ 3,90</td>
                     </tr>
@@ -157,36 +160,36 @@
             </article>
 
             <article class="content">
-                
+                    <!-- Coffee & Tea -->
                 <table id="cof_table" class="m-list">
                     <tr>
                         <th colspan="2">Coffee & Tea</th>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Cappucino</td>
                         <td class="price">€ 6,00</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Latte</td>
                         <td class="price">€ 4,70</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Mocha</td>
                         <td class="price">€ 4,70</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Espresso</td>
                         <td class="price">€ 3,90</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Americano</td>
                         <td class="price">€ 3,90</td>
                     </tr>
-                    <tr>
+                    <tr class="cd-child">
                         <td>Flat white</td>
                         <td class="price">€ 3,90</td>
                     </tr>
-                    <tr>
+                    <tr id="d-last">
                         <td class="pname">Tea
                             <ul>
                                 <li>Black tea</li>
@@ -227,9 +230,12 @@
                         <td>Flat water</td>
                         <td class="price">€ 2,30</td>
                     </tr>
-                    <tr class="cd-child">
+                    <tr id="cd-last">
                         <td>Sparkling water</td>
-                        <td class="price">€ 2,30</td>
+                        <td  class="price">
+                            <p style="padding: 1px;">&nbsp;</p>  
+                            € 2,30
+                        </td>
                     </tr>
                 </table>
             </article>

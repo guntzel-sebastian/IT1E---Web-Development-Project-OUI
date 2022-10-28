@@ -9,7 +9,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     display: grid;
     gap: 46px;
-    grid-template-rows: 81px 610px 81px;
+    grid-template-rows: 81px 644px 81px;
     background-color: #EDE5BB;
     
 }
@@ -245,7 +245,7 @@ td{
     grid-column-end: 12;
     gap: 20px;
     /* min-height: 700px; */
-    grid-template-rows: 10px 30px 400px 80px 10px;
+    grid-template-rows: 10px 30px 434px 80px 10px;
     grid-template-columns: 10px repeat(8, 1fr) 10px;
     /* color: #95261F; */
     background-color: #BAD3EE;
@@ -273,22 +273,51 @@ td{
     height: 30px;
 }
 
-.pname{
+#s-first{
+    height: 134px;
+    /* vertical-align: top; */
+    /* padding-top: 10px; */
+    /* text-align: top; */
+}
+
+#s-f-p{
+    background-color: green;
     vertical-align: top;
+}
+
+#s-1-space{
+    height:4px;
+} 
+#s-last{
+    height: 170px;
+    vertical-align: top;
+}
+
+#d-last{
+    /* margin-top: 2px; */
+    vertical-align: top;
+}
+
+#cd-last{
+    vertical-align: top;
+}
+
+.pname{
+    /* vertical-align: top; */
 }
 
 .pname li{
     margin-left: 11px;
-    font-size: smaller;
+    font-size: small;
 }
 
 .price{
     text-align: right;
 }
 
-.li-price{
+/* .li-price{
     vertical-align: top;
-}
+} */
 
 /* Image properties */
 .grid-col-span-2 img{
