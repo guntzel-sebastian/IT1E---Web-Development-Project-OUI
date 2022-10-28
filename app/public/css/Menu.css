@@ -470,10 +470,10 @@ td{
 /* footer */
 .footer {
     grid-row: 3;
-    position: relative;
+	position: fixed;
+	Width: 100%;
+	bottom: 0;
     display: flex;
-    width: 100%;
-    bottom: 0px;
     background-color:#00657C;
     height: 81px;
     align-items: center;

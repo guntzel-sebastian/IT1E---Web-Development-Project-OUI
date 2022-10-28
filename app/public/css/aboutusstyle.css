@@ -65,7 +65,7 @@ header a:active{
 	grid-column: 1/11;
 	background-image: url("../img/background.png");
 	background-size: cover;
-	height: 750px;
+	height: 150%;
 	justify-content: center;
 }
 
@@ -138,7 +138,9 @@ header a:active{
 footer{
 	display: grid;
 	grid-column: 11/1;
-	position: relative;
+	position: fixed;
+	Width: 100%;
+	bottom: 0;
 	grid-template-columns: subgrid;
 	grid-template-columns: repeat(10, 1fr);
 	background-color: #00657C;
